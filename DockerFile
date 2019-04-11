@@ -1,3 +1,4 @@
+# node image
 FROM node:9 as build
 
 # create dir to host application
@@ -12,6 +13,7 @@ COPY . /app
 
 EXPOSE 4200
 
+# nginx image 
 FROM nginx:1
 
 COPY from-build /app/dist /usr/share/nginx/html
