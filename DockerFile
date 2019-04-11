@@ -11,7 +11,6 @@ WORKDIR /app
 
 COPY . /app
 
-EXPOSE 4200
 
 # nginx image 
 FROM nginx:1
